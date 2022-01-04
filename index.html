@@ -3,16 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>Rock Paper Scissors</title>
-        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="Script.js" defer></script>
     </head>
 
     <body>
-    
-        <div id="buttons">
-            <button id="Rock">Rock</button>
-            <button id="Paper">Paper</button>
-            <button id="Scissors">Scissors</button>
-        </div>
         
+        <div class="selections">
+            <button class="selection" data-selection="Rock">🪨</button>
+            <button class="selection" data-selection="Paper"> 📄 </button>
+            <button class="selection" data-selection="Scissors"> ✂️ </button>
+        </div>
+
+        <div class="results">
+
+            <div>You
+                <span class="resultScore" data-user-score>0</span>
+            </div>
+
+            <div data-final-column>Computer
+                <span class="resultScore" data-comp-score>0</span>
+            </div>
+            
+        </div>
     </body>
 </html>
